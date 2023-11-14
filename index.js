@@ -14,7 +14,9 @@ app.use(Express.json());
 app.use("/api/auth/", authRoutes);
 app.use("/api/todo/", todoRoutes);
 
-
+app.get("/", (req, res) => {
+  res.send("Hello")
+})
 
 async function startSession() {
   try {
