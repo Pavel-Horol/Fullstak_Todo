@@ -6,7 +6,7 @@ import todoRoutes from "./routes/todo.route.js"
 import cors from "cors";
 
 const app = Express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(Express.json());
